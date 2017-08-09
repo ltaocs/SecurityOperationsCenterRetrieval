@@ -38,6 +38,7 @@ scores = cross_val_score(clf, X, y, cv=10, scoring='recall')
 #print(scores)
 
 # feature extraction
+#Recursive Feature Elimination
 model = LogisticRegression()
 rfe = RFE(model, 3)
 fit = rfe.fit(X, y)
