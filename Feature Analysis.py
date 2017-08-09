@@ -8,6 +8,7 @@ import pandas as pd
 import numpy as nptx
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.dummy import DummyClassifier
+from sklearn.feature_selection import SelectKBest, RFE
 from sklearn.tree import DecisionTreeClassifier, export_graphviz
 from sklearn.linear_model import LogisticRegression
 from sklearn.cross_validation import train_test_split
@@ -20,6 +21,7 @@ from sklearn.cross_validation import cross_val_score
 import matplotlib.pyplot as plt
 from sklearn.grid_search import GridSearchCV
 from sklearn.linear_model import LinearRegression
+from sklearn.feature_selection import chi2
 
 Data_Source = pd.read_csv('Data/TempSamples2/MyFile/NumberEndFile.csv')
 feature_cols = ['DSTPORT1', 'DSTPORT2', 'DSTPORT3', 'DSTPORT4', 'DSTPORT5', 'DSTPORT6', 'DSTPORT7', 'DSTPORT8',
@@ -33,23 +35,15 @@ clf = svm.SVC()
 clf.fit(X_train, y_train)
 y_test = clf.predict(X_test)
 scores = cross_val_score(clf, X, y, cv=10, scoring='recall')
-print(scores)
-
-#Baseline
-Baseclf = DummyClassifier(strategy='uniform',random_state=0)
-Baseclf.fit(X_train, y_train)
-print(Baseclf.score(X_test, y_test))
-
-#linreg = LinearRegression()
-#linreg.fit(X_train, y_train)
-#y_test = linreg.predict(X_test)
-#knn = KNeighborsClassifier(n_neighbors=5)
-#scores = cross_val_score(linreg, X, y, cv=10, scoring='accuracy')
-#k_range = list(range(1, 31))
-#param_grid = dict(n_neighbors=k_range)
-#grid = GridSearchCV(knn, param_grid, cv=10, scoring='accuracy')
-#grid.fit(X, y)
-#print(grid.best_score_)
-#print(grid.best_params_)
-#print(grid.best_estimator_)
 #print(scores)
+
+# feature extraction
+model = LogisticRegression()
+rfe = RFE(model, 3)
+fit = rfe.fit(X, y)
+#print("Num Features: %d") % fit.n_features_
+print(fit.n_features_)
+#print("Selected Features: %s") % fit.support_
+print(fit.support_)
+#print("Feature Ranking: %s") % fit.ranking_
+print(fit.ranking_)

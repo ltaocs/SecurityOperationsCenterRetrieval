@@ -7,7 +7,6 @@ import re
 def Read_Data(FilePath):
     # pass in column names for each CSV
     cols_names = ['IndexNo', 'Sequence', 'Operation', 'Source', 'Content', 'Thinking']
-    # data = pd.read_csv('Data/TempSamples2/T1_samples1.csv', names=cols_names, header=None)
     data = pd.read_csv(FilePath, names=cols_names, header=None)
     Content_Data = data['Content']
 
@@ -28,6 +27,7 @@ def Read_Data(FilePath):
         i = i.replace('SourcePort', 'SRCPORT')
         i = i.replace('SourceIP', 'SRCIP')
         i = i.replace('DesIP', 'DSTIP')
+        # Extract the number of DSTPORT,SRCPORT,SRCIP
         xDSTPORT = re.findall('DSTPORT = \'([0-9]+)', i)
         xNotDSTPORT = re.findall('DSTPORT <> \'([0-9]+)', i)
         xSRCPORT = re.findall('SRCPORT = \'([0-9]+)', i)
@@ -74,7 +74,6 @@ def Read_Data(FilePath):
                 LocationIndex = 'DSTIP' + str(DSTIP)
                 One_Feature.set_value(LocationIndex, xElement)
                 DSTIP = DSTIP + 1
-
 
     return One_Feature
 

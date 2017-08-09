@@ -27,7 +27,17 @@ from sklearn.cross_validation import cross_val_score
 import matplotlib.pyplot as plt
 from sklearn.grid_search import GridSearchCV
 from sklearn.linear_model import LinearRegression
-
+# import the necessary packages
+from sklearn.preprocessing import LabelEncoder
+from sklearn.cross_validation import train_test_split
+from keras.models import Sequential
+from keras.layers import Activation
+from keras.optimizers import SGD
+from keras.layers import Dense
+from keras.utils import np_utils
+import numpy as np
+import argparse
+import os
 
 Data_Source = pd.read_csv('Data/TempSamples2/MyFile/NumberEndFile.csv')
 feature_cols = ['DSTPORT1', 'DSTPORT2', 'DSTPORT3', 'DSTPORT4', 'DSTPORT5', 'DSTPORT6', 'DSTPORT7', 'DSTPORT8',
@@ -40,21 +50,25 @@ X_train, X_test, Y_train, Y_test = train_test_split(X, Y, random_state=1)
 # create model
 model = Sequential()
 
-model.add(Convolution2D(32, 3, 3, activation='relu', input_shape=(1, 28, 28)))
-model.add(Convolution2D(32, 3, 3, activation='relu'))
-model.add(MaxPooling2D(pool_size=(2, 2)))
-model.add(Dropout(0.25))
-
-model.add(Flatten())
-model.add(Dense(128, activation='relu'))
-model.add(Dropout(0.5))
-model.add(Dense(10, activation='softmax'))
+model.add(Dense(12, input_dim=32, activation='relu'))
+model.add(Dense(8, activation='relu'))
+model.add(Dense(1, activation='sigmoid'))
 
 # Compile model
-model.compile(loss='categorical_crossentropy',
-              optimizer='adam',
-              metrics=['accuracy'])
+# Compile model
+model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+
 # Fit the model
-model.fit(X_train, Y_train,
-          batch_size=32, nb_epoch=10, verbose=1)
+# Fit the model
+model.fit(X, Y,
+          batch_size=32,
+          epochs=10,
+          verbose=0)
+
+# score = model.evaluate(X_test, Y_test, verbose=0)
+# print(score)
+
+# evaluate the model
 score = model.evaluate(X_test, Y_test, verbose=0)
+print('Test loss:', score[0])
+print('Test accuracy:', score[1])
