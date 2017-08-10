@@ -1,7 +1,7 @@
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
 import re
+
+import pandas as pd
+
 
 def Read_Data(FilePath):
     # pass in column names for each CSV
@@ -26,21 +26,20 @@ def Read_Data(FilePath):
 
         # One_Feature = pd.Series()
         # DSTPORT
-        i=i.rstrip()
+        i = i.rstrip()
         i = i.replace('DestPort', 'DSTPORT')
         i = i.replace('SourcePort', 'SRCPORT')
         i = i.replace('SourceIP', 'SRCIP')
         i = i.replace('DesIP', 'DSTIP')
 
-        x=re.findall('^DSTPORT = \'([0-9.]+)', i)
-        #print(x)
-        #if (("DSTPORT = '6667'" or "DestPort = '6667'") in i) and DSTPORT <= 8:
+        x = re.findall('^DSTPORT = \'([0-9.]+)', i)
+        # print(x)
+        # if (("DSTPORT = '6667'" or "DestPort = '6667'") in i) and DSTPORT <= 8:
         for xElement in x:
             if DSTPORT <= 8:
                 LocationIndex = 'DSTPORT' + str(DSTPORT)
                 One_Feature.set_value(LocationIndex, xElement)
                 DSTPORT = DSTPORT + 1
-
 
         if (("DSTPORT = '445'" or "DestPort = '445'") in i) and DSTPORT <= 8:
             LocationIndex = 'DSTPORT' + str(DSTPORT)
@@ -142,6 +141,7 @@ def Read_Data(FilePath):
     print(One_Feature)
 
     return One_Feature
+
 
 Classification_Data = pd.DataFrame(
     columns=['DSTPORT1', 'DSTPORT2', 'DSTPORT3', 'DSTPORT4', 'DSTPORT5', 'DSTPORT6', 'DSTPORT7', 'DSTPORT8',

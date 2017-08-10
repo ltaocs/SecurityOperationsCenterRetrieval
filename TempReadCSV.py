@@ -1,6 +1,4 @@
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
 
 # pass in column names for each CSV
 cols_names = ['IndexNo', 'Sequence', 'Operation', 'Source', 'Content', 'Thinking']
@@ -20,7 +18,7 @@ One_Feature = pd.Series(
            'SRCPORT1', 'SRCPORT2', 'SRCPORT3', 'SRCPORT4', 'SRCPORT5', 'SRCPORT6', 'SRCPORT7', 'SRCPORT8',
            'SRCIP1', 'SRCIP2', 'SRCIP3', 'SRCIP4', 'SRCIP5', 'SRCIP6', 'SRCIP7', 'SRCIP8',
            'DSTIP1', 'DSTIP2', 'DSTIP3', 'DSTIP4', 'DSTIP5', 'DSTIP6', 'DSTIP7', 'DSTIP8'])
-i="SRCPORT = '6667'"
+i = "SRCPORT = '6667'"
 if (i.find("DSTPORT = '6667'" or "DestPort = '6667'")) and DSTPORT <= 8:
     # if(("DSTPORT = '6667'" or "DestPort = '6667'") in i):
     LocationIndex = 'DSTPORT' + str(DSTPORT)

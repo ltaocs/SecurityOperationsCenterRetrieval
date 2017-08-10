@@ -1,6 +1,4 @@
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
 
 # pass in column names for each CSV
 cols_names = ['IndexNo', 'Sequence', 'Operation', 'Source', 'Content', 'Thinking']

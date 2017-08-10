@@ -1,28 +1,11 @@
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
 from sklearn import svm
-import os
-import subprocess
-import pandas as pd
-import numpy as nptx
-from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
-from sklearn.tree import DecisionTreeClassifier, export_graphviz
-from sklearn.linear_model import LogisticRegression
-from sklearn.cross_validation import train_test_split
-from sklearn.linear_model import LinearRegression
-from sklearn.datasets import load_iris
-from sklearn.cross_validation import train_test_split
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn import metrics
 from sklearn.cross_validation import cross_val_score
-import matplotlib.pyplot as plt
-from sklearn.grid_search import GridSearchCV
-from sklearn.linear_model import LinearRegression
+from sklearn.cross_validation import train_test_split
 
 Data_Source = pd.read_csv('Data/TempSamples2/MyFile/Sum.csv')
 
-feature_cols = ['SRCPORTSum','SRCPORTSum','SRCIPSum','DSTIPSum']
+feature_cols = ['SRCPORTSum', 'SRCPORTSum', 'SRCIPSum', 'DSTIPSum']
 X = Data_Source[feature_cols]
 y = Data_Source['Result']
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
@@ -32,10 +15,10 @@ y_test = clf.predict(X_test)
 scores = cross_val_score(clf, X, y, cv=10, scoring='accuracy')
 print(scores)
 
-#linreg = LinearRegression()
-#linreg.fit(X_train, y_train)
-#y_test = linreg.predict(X_test)
-#knn = KNeighborsClassifier(n_neighbors=3)
-#scores = cross_val_score(knn, X, y, cv=10, scoring='accuracy')
+# linreg = LinearRegression()
+# linreg.fit(X_train, y_train)
+# y_test = linreg.predict(X_test)
+# knn = KNeighborsClassifier(n_neighbors=3)
+# scores = cross_val_score(knn, X, y, cv=10, scoring='accuracy')
 
-#print(scores)
+# print(scores)

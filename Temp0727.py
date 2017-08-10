@@ -1,14 +1,13 @@
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
 import re
+
+import pandas as pd
 
 # pass in column names for each CSV
 cols_names = ['IndexNo', 'Sequence', 'Operation', 'Source', 'Content', 'Thinking']
 # data = pd.read_csv('Data/TempSamples2/T1_samples1.csv', names=cols_names, header=None)
 data = pd.read_csv('Data/TempSamples2/MyFile/TestT1_samples1.csv', names=cols_names, header=None)
 Content_Data = data['Content']
-#print(Content_Data)
+# print(Content_Data)
 # define Classification Data
 
 DSTPORT = 1
@@ -33,8 +32,6 @@ for i in Content_Data:
     xNotSRCPORT = re.findall('SRCPORT <> \'([0-9]+)', i)
     xSRCIP = re.findall('SRCIP [=<] \'([0-9]+)', i)
     xDSTIP = re.findall('SRCIP [=<] \'([0-9]+)', i)
-
-
 
     # One_Feature = pd.Series()
     # DSTPORT
@@ -75,6 +72,5 @@ for i in Content_Data:
             LocationIndex = 'DSTIP' + str(DSTIP)
             One_Feature.set_value(LocationIndex, xElement)
             DSTIP = DSTIP + 1
-
 
 print(One_Feature)
