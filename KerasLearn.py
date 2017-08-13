@@ -3,6 +3,7 @@ from keras.layers import Dense
 from keras.models import Sequential
 # import the necessary packages
 from sklearn.cross_validation import train_test_split
+import numpy as np
 
 Data_Source = pd.read_csv('Data/TempSamples2/MyFile/NumberEndFile.csv')
 feature_cols = ['DSTPORT1', 'DSTPORT2', 'DSTPORT3', 'DSTPORT4', 'DSTPORT5', 'DSTPORT6', 'DSTPORT7', 'DSTPORT8',
@@ -21,19 +22,25 @@ model.add(Dense(1, activation='sigmoid'))
 
 # Compile model
 # Compile model
-model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+#model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+model.compile(loss="mean_squared_error", optimizer="adam",metrics=['accuracy'])
 
+
+
+#Pandas dataframe to Numpy array
+newX_train= np.array(X_train)
+newY_train= np.array(Y_train)
+newX_test= np.array(X_test)
+newY_test= np.array(Y_test)
 # Fit the model
-# Fit the model
-model.fit(X, Y,
-          batch_size=32,
-          epochs=10,
-          verbose=0)
+model.fit(newX_train, newY_train,epochs=100)
+
 
 # score = model.evaluate(X_test, Y_test, verbose=0)
 # print(score)
 
 # evaluate the model
-score = model.evaluate(X_test, Y_test, verbose=0)
-print('Test loss:', score[0])
-print('Test accuracy:', score[1])
+score = model.evaluate(newX_test, newY_test, verbose=0)
+print(score[1])
+#print('Test loss:', score[0])
+#print('Test accuracy:', score[1])
