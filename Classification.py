@@ -3,25 +3,33 @@ from sklearn import svm
 from sklearn.cross_validation import cross_val_score
 from sklearn.cross_validation import train_test_split
 from sklearn.dummy import DummyClassifier
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
 
 Data_Source = pd.read_csv('Data/TempSamples2/MyFile/NumberEndFile.csv')
 feature_cols = ['DSTPORT1', 'DSTPORT2', 'DSTPORT3', 'DSTPORT4', 'DSTPORT5', 'DSTPORT6', 'DSTPORT7', 'DSTPORT8',
                 'SRCPORT1', 'SRCPORT2', 'SRCPORT3', 'SRCPORT4', 'SRCPORT5', 'SRCPORT6', 'SRCPORT7', 'SRCPORT8',
                 'SRCIP1', 'SRCIP2', 'SRCIP3', 'SRCIP4', 'SRCIP5', 'SRCIP6', 'SRCIP7', 'SRCIP8',
                 'DSTIP1', 'DSTIP2', 'DSTIP3', 'DSTIP4', 'DSTIP5', 'DSTIP6', 'DSTIP7', 'DSTIP8']
-X = Data_Source[feature_cols]
-y = Data_Source['Result']
-X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
+X = Data_Source[feature_cols].values
+y = Data_Source['Result'].values
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=4)
 clf = svm.SVC()
 clf.fit(X_train, y_train)
-y_test = clf.predict(X_test)
-scores = cross_val_score(clf, X, y, cv=10, scoring='recall')
-print(scores)
+# TODO y_test
+# y_test = clf.predict(X_test)
+accuracy_scores = cross_val_score(clf, X_test, y_test, cv=10, scoring='accuracy')
+print("accuracy: {}".format(accuracy_scores))
+#Classification Report
+predicted = clf.predict(X_test)
+report = classification_report(y_test, predicted)
+print("Classification Report:")
+print(report)
 
 # Baseline
 Baseclf = DummyClassifier(strategy='uniform', random_state=0)
 Baseclf.fit(X_train, y_train)
-print(Baseclf.score(X_test, y_test))
+print("Baseline scores: {}".format(Baseclf.score(X_test, y_test)))
 
 # linreg = LinearRegression()
 # linreg.fit(X_train, y_train)
