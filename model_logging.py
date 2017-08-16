@@ -1,8 +1,8 @@
-#tensorboard --logdir=C:\Users\txl78\PycharmProjects\SecurityOperationsCenterRetrieval\logs
-import pandas as pd
+# tensorboard --logdir=C:\Users\txl78\PycharmProjects\SecurityOperationsCenterRetrieval\logs
 import keras
-from keras.models import Sequential
+import pandas as pd
 from keras.layers import *
+from keras.models import Sequential
 from sklearn.model_selection import train_test_split
 
 Data_Source = pd.read_csv('Data/TempSamples2/MyFile/NumberEndFile.csv')
@@ -37,7 +37,6 @@ model.fit(
     verbose=2,
     callbacks=[logger]
 )
-
 
 test_error_rate = model.evaluate(X_test, Y_test, verbose=0)
 print("The mean squared error (MSE) for the test data set is: {}".format(test_error_rate))
