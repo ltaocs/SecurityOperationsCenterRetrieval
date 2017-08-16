@@ -19,7 +19,6 @@ model.add(Dense(8, activation='relu'))
 model.add(Dense(1, activation='sigmoid'))
 
 # Compile model
-# Compile model
 # model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 model.compile(loss="mean_squared_error", optimizer="adam", metrics=['mae'])
 
@@ -32,6 +31,6 @@ model.compile(loss="mean_squared_error", optimizer="adam", metrics=['mae'])
 model.fit(X_train, Y_train, epochs=100)
 
 # evaluate the model
-score = model.evaluate(X_test, Y_test, verbose=0)
+score = model.evaluate(X_test, Y_test, verbose=1)
 print('Test loss:', score[0])
 print('Test accuracy:', score[1])
