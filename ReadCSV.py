@@ -84,7 +84,8 @@ Classification_Data = pd.DataFrame(
              'DSTIP1', 'DSTIP2', 'DSTIP3', 'DSTIP4', 'DSTIP5', 'DSTIP6', 'DSTIP7', 'DSTIP8'])
 
 Lable_Result_File = pd.read_csv("Data/TempSamples2/MyFile/lable results.csv")
-for i in range(0, 304):
+CSVLength = len(Lable_Result_File.index)
+for i in range(0, CSVLength):
     Process_Data_One = Read_Data('Data/TempSamples2/' + Lable_Result_File['Trace1'][i])
     Process_Data_Two = Read_Data('Data/TempSamples2/' + Lable_Result_File['Trace2'][i])
     Result_Series = pd.Series(Process_Data_One == Process_Data_Two)
