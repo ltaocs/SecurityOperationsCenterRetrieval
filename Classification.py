@@ -4,7 +4,6 @@ from sklearn.cross_validation import cross_val_score
 from sklearn.cross_validation import train_test_split
 from sklearn.dummy import DummyClassifier
 from sklearn.metrics import classification_report
-from sklearn.metrics import confusion_matrix
 
 Data_Source = pd.read_csv('Data/TempSamples2/MyFile/NumberEndFile.csv')
 feature_cols = ['DSTPORT1', 'DSTPORT2', 'DSTPORT3', 'DSTPORT4', 'DSTPORT5', 'DSTPORT6', 'DSTPORT7', 'DSTPORT8',
@@ -16,8 +15,6 @@ y = Data_Source['Result'].values
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=4)
 clf = svm.SVC()
 clf.fit(X_train, y_train)
-# TODO y_test
-# y_test = clf.predict(X_test)
 accuracy_scores = cross_val_score(clf, X_test, y_test, cv=10, scoring='accuracy')
 print("accuracy: {}".format(accuracy_scores))
 #Classification Report

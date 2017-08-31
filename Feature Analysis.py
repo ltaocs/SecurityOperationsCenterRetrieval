@@ -11,14 +11,13 @@ feature_cols = ['DSTPORT1', 'DSTPORT2', 'DSTPORT3', 'DSTPORT4', 'DSTPORT5', 'DST
                 'SRCPORT1', 'SRCPORT2', 'SRCPORT3', 'SRCPORT4', 'SRCPORT5', 'SRCPORT6', 'SRCPORT7', 'SRCPORT8',
                 'SRCIP1', 'SRCIP2', 'SRCIP3', 'SRCIP4', 'SRCIP5', 'SRCIP6', 'SRCIP7', 'SRCIP8',
                 'DSTIP1', 'DSTIP2', 'DSTIP3', 'DSTIP4', 'DSTIP5', 'DSTIP6', 'DSTIP7', 'DSTIP8']
-X = Data_Source[feature_cols]
-y = Data_Source['Result']
+X = Data_Source[feature_cols].values
+y = Data_Source['Result'].values
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
 clf = svm.SVC()
 clf.fit(X_train, y_train)
-y_test = clf.predict(X_test)
+predicted = clf.predict(X_test)
 scores = cross_val_score(clf, X, y, cv=10, scoring='recall')
-# print(scores)
 
 # feature extraction
 # Recursive Feature Elimination

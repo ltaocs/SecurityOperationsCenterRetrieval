@@ -3,7 +3,8 @@ from keras.layers import Dense
 from keras.models import Sequential
 from sklearn.model_selection import train_test_split
 
-Data_Source = pd.read_csv('Data/TempSamples2/MyFile/NumberEndFile.csv')
+Data_Source = pd.read_csv(
+    'C:/Users/txl78/PycharmProjects/SecurityOperationsCenterRetrieval/Data/TempSamples2/MyFile/NumberEndFile.csv')
 feature_cols = ['DSTPORT1', 'DSTPORT2', 'DSTPORT3', 'DSTPORT4', 'DSTPORT5', 'DSTPORT6', 'DSTPORT7', 'DSTPORT8',
                 'SRCPORT1', 'SRCPORT2', 'SRCPORT3', 'SRCPORT4', 'SRCPORT5', 'SRCPORT6', 'SRCPORT7', 'SRCPORT8',
                 'SRCIP1', 'SRCIP2', 'SRCIP3', 'SRCIP4', 'SRCIP5', 'SRCIP6', 'SRCIP7', 'SRCIP8',
@@ -20,7 +21,7 @@ model.add(Dense(1, activation='sigmoid'))
 
 # Compile model
 # model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
-model.compile(loss="mean_squared_error", optimizer="adam", metrics=['mae'])
+model.compile(loss="mean_squared_error", optimizer="adam", metrics=['accuracy'])
 
 # Pandas dataframe to Numpy array
 # newX_train= np.array(X_train)
@@ -32,5 +33,5 @@ model.fit(X_train, Y_train, epochs=100)
 
 # evaluate the model
 score = model.evaluate(X_test, Y_test, verbose=1)
-print('Test loss:', score[0])
-print('Test accuracy:', score[1])
+print('Test loss:{}'.format(score[0]))
+print('Test accuracy:{}'.format(score[1]))
