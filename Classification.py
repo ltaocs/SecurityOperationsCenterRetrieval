@@ -1,7 +1,6 @@
 import pandas as pd
 from sklearn import svm
-from sklearn.cross_validation import cross_val_score
-from sklearn.cross_validation import train_test_split
+from sklearn.cross_validation import cross_val_score, train_test_split
 from sklearn.dummy import DummyClassifier
 from sklearn.metrics import classification_report
 

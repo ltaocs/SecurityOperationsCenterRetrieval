@@ -1,0 +1,14 @@
+import pandas as pd
+
+Data_Source = pd.read_csv(
+    'C:/Users/txl78/PycharmProjects/SecurityOperationsCenterRetrieval/Data/TempSamples2/MyFile/NumberEndFile.csv')
+feature_cols = ['DSTPORT1', 'DSTPORT2', 'DSTPORT3', 'DSTPORT4', 'DSTPORT5', 'DSTPORT6', 'DSTPORT7', 'DSTPORT8',
+                'SRCPORT1', 'SRCPORT2', 'SRCPORT3', 'SRCPORT4', 'SRCPORT5', 'SRCPORT6', 'SRCPORT7', 'SRCPORT8',
+                'SRCIP1', 'SRCIP2', 'SRCIP3', 'SRCIP4', 'SRCIP5', 'SRCIP6', 'SRCIP7', 'SRCIP8',
+                'DSTIP1', 'DSTIP2', 'DSTIP3', 'DSTIP4', 'DSTIP5', 'DSTIP6', 'DSTIP7', 'DSTIP8']
+X = Data_Source[feature_cols].values
+y = Data_Source['Result'].values
+print(type(X))
+print(type(y))
+print(X.shape)
+print(y.shape)

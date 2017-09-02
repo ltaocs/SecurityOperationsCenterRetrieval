@@ -1,3 +1,4 @@
+# This module was deprecated in favor of the Keras_CrossValidation module.
 import pandas as pd
 from keras.layers import Dense
 from keras.models import Sequential
@@ -14,24 +15,17 @@ Y = Data_Source['Result'].values
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, random_state=1)
 # create model
 model = Sequential()
-
 model.add(Dense(12, input_dim=32, activation='relu'))
 model.add(Dense(8, activation='relu'))
 model.add(Dense(1, activation='sigmoid'))
-
 # Compile model
 # model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 model.compile(loss="mean_squared_error", optimizer="adam", metrics=['accuracy'])
-
-# Pandas dataframe to Numpy array
-# newX_train= np.array(X_train)
-# newY_train= np.array(Y_train)
-# newX_test= np.array(X_test)
-# newY_test= np.array(Y_test)
+print("model summary:")
+print(model.summary())
 # Fit the model
 model.fit(X_train, Y_train, epochs=100)
-
 # evaluate the model
 score = model.evaluate(X_test, Y_test, verbose=1)
-print('Test loss:{}'.format(score[0]))
-print('Test accuracy:{}'.format(score[1]))
+# print('Test loss:{}'.format(score[0]))
+# print('Test accuracy:{}'.format(score[1]))

@@ -1,0 +1,31 @@
+import numpy as np
+import pandas as pd
+from sklearn import svm
+from sklearn.feature_selection import SelectKBest
+from sklearn.feature_selection import chi2
+from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import train_test_split
+
+Data_Source = pd.read_csv(
+    'C:/Users/txl78/PycharmProjects/SecurityOperationsCenterRetrieval/Data/TempSamples2/MyFile/NumberEndFile.csv')
+feature_cols = ['DSTPORT1', 'DSTPORT2', 'DSTPORT3', 'DSTPORT4', 'DSTPORT5', 'DSTPORT6', 'DSTPORT7', 'DSTPORT8',
+                'SRCPORT1', 'SRCPORT2', 'SRCPORT3', 'SRCPORT4', 'SRCPORT5', 'SRCPORT6', 'SRCPORT7', 'SRCPORT8',
+                'SRCIP1', 'SRCIP2', 'SRCIP3', 'SRCIP4', 'SRCIP5', 'SRCIP6', 'SRCIP7', 'SRCIP8',
+                'DSTIP1', 'DSTIP2', 'DSTIP3', 'DSTIP4', 'DSTIP5', 'DSTIP6', 'DSTIP7', 'DSTIP8']
+X = Data_Source[feature_cols].values
+y = Data_Source['Result'].values
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
+clf = svm.SVC()
+clf.fit(X_train, y_train)
+predicted = clf.predict(X_test)
+scores = cross_val_score(clf, X_test, y_test, cv=10, scoring='accuracy')
+
+# feature extraction
+test = SelectKBest(score_func=chi2, k=6)
+fit = test.fit(X_train, y_train)
+# summarize scores
+np.set_printoptions(precision=3)
+print(fit.scores_)
+features = fit.transform(X)
+# summarize selected features
+print(features[0:5, :])
