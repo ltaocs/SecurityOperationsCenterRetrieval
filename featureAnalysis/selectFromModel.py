@@ -6,7 +6,7 @@ from sklearn import svm
 from sklearn.feature_selection import SelectFromModel
 
 Data_Source = pd.read_csv(
-    'C:/Users/txl78/PycharmProjects/SecurityOperationsCenterRetrieval/Data/TempSamples2/MyFile/NumberEndFile.csv')
+    'C:/Users/txl78/PycharmProjects/SecurityOperationsCenterRetrieval/tempData/TempSamples2/MyFile/NumberEndFile.csv')
 feature_cols = ['DSTPORT1', 'DSTPORT2', 'DSTPORT3', 'DSTPORT4', 'DSTPORT5', 'DSTPORT6', 'DSTPORT7', 'DSTPORT8',
                 'SRCPORT1', 'SRCPORT2', 'SRCPORT3', 'SRCPORT4', 'SRCPORT5', 'SRCPORT6', 'SRCPORT7', 'SRCPORT8',
                 'SRCIP1', 'SRCIP2', 'SRCIP3', 'SRCIP4', 'SRCIP5', 'SRCIP6', 'SRCIP7', 'SRCIP8',

@@ -1,3 +1,5 @@
+# This module is used to read response_merged.csv
+
 import re
 
 import pandas as pd
@@ -83,12 +85,18 @@ Classification_Data = pd.DataFrame(
              'SRCIP1', 'SRCIP2', 'SRCIP3', 'SRCIP4', 'SRCIP5', 'SRCIP6', 'SRCIP7', 'SRCIP8',
              'DSTIP1', 'DSTIP2', 'DSTIP3', 'DSTIP4', 'DSTIP5', 'DSTIP6', 'DSTIP7', 'DSTIP8'])
 
-Lable_Result_File = pd.read_csv("tempData/TempSamples2/MyFile/extendLabelResults.csv")
+Lable_Result_File = pd.read_csv(
+    r"C:\Users\txl78\PycharmProjects\SecurityOperationsCenterRetrieval\Data\Source\response_merged_withheader.csv")
 CSVLength = len(Lable_Result_File.index)
+# C:/Users/txl78/PycharmProjects/SecurityOperationsCenterRetrieval/tempData/TempSamples2
 for i in range(0, CSVLength):
-    Process_Data_One = Read_Data('tempData/TempSamples2/' + Lable_Result_File['Trace1'][i])
-    Process_Data_Two = Read_Data('tempData/TempSamples2/' + Lable_Result_File['Trace2'][i])
+    Process_Data_One = Read_Data(
+        'C:/Users/txl78/PycharmProjects/SecurityOperationsCenterRetrieval/tempData/TempSamples2/' +
+        Lable_Result_File['Trace1'][i])
+    Process_Data_Two = Read_Data(
+        'C:/Users/txl78/PycharmProjects/SecurityOperationsCenterRetrieval/tempData/TempSamples2/' +
+        Lable_Result_File['Trace2'][i])
     Result_Series = pd.Series(Process_Data_One == Process_Data_Two)
     Classification_Data = Classification_Data.append(Result_Series, ignore_index=True)
-Classification_Data['Result'] = Lable_Result_File['Tao']
-Classification_Data.to_csv('tempData/TempSamples2/MyFile/extendEndFile.csv')
+Classification_Data.to_csv(
+    r'C:\Users\txl78\PycharmProjects\SecurityOperationsCenterRetrieval\Data\Source\prepredict_response_merged_withHeader.csv')

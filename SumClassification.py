@@ -1,9 +1,9 @@
 import pandas as pd
-from sklearn.cross_validation import cross_val_score
-from sklearn.cross_validation import train_test_split
+from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 
-Data_Source = pd.read_csv('Data/TempSamples2/MyFile/Sum.csv')
+Data_Source = pd.read_csv('tempData/TempSamples2/MyFile/Sum.csv')
 
 feature_cols = ['SRCPORTSum', 'SRCPORTSum', 'SRCIPSum', 'DSTIPSum']
 X = Data_Source[feature_cols]

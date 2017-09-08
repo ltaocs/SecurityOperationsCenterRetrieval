@@ -1,10 +1,10 @@
 import pandas as pd
 from sklearn import svm
-from sklearn.cross_validation import cross_val_score, train_test_split
 from sklearn.dummy import DummyClassifier
 from sklearn.metrics import classification_report
+from sklearn.model_selection import cross_val_score, train_test_split
 
-Data_Source = pd.read_csv('Data/TempSamples2/MyFile/NumberEndFile.csv')
+Data_Source = pd.read_csv('tempData/TempSamples2/MyFile/NumberEndFile.csv')
 feature_cols = ['DSTPORT1', 'DSTPORT2', 'DSTPORT3', 'DSTPORT4', 'DSTPORT5', 'DSTPORT6', 'DSTPORT7', 'DSTPORT8',
                 'SRCPORT1', 'SRCPORT2', 'SRCPORT3', 'SRCPORT4', 'SRCPORT5', 'SRCPORT6', 'SRCPORT7', 'SRCPORT8',
                 'SRCIP1', 'SRCIP2', 'SRCIP3', 'SRCIP4', 'SRCIP5', 'SRCIP6', 'SRCIP7', 'SRCIP8',
@@ -29,7 +29,7 @@ print("Baseline scores: {}".format(Baseclf.score(X_test, y_test)))
 
 # linreg = LinearRegression()
 # linreg.fit(X_train, y_train)
-# y_test = linreg.predict(X_test)
+# predicted = linreg.predict(X_test)
 # knn = KNeighborsClassifier(n_neighbors=5)
 # scores = cross_val_score(linreg, X, y, cv=10, scoring='accuracy')
 # k_range = list(range(1, 31))

@@ -10,7 +10,7 @@ from sklearn.model_selection import train_test_split
 # Turn off TensorFlow warning messages in program output
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
-Data_Source = pd.read_csv('Data/TempSamples2/MyFile/NumberEndFile.csv')
+Data_Source = pd.read_csv('tempData/TempSamples2/MyFile/NumberEndFile.csv')
 feature_cols = ['DSTPORT1', 'DSTPORT2', 'DSTPORT3', 'DSTPORT4', 'DSTPORT5', 'DSTPORT6', 'DSTPORT7', 'DSTPORT8',
                 'SRCPORT1', 'SRCPORT2', 'SRCPORT3', 'SRCPORT4', 'SRCPORT5', 'SRCPORT6', 'SRCPORT7', 'SRCPORT8',
                 'SRCIP1', 'SRCIP2', 'SRCIP3', 'SRCIP4', 'SRCIP5', 'SRCIP6', 'SRCIP7', 'SRCIP8',
