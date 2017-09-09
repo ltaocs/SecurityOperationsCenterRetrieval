@@ -4,108 +4,10 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47fa0e53-6f47-4640-a9de-cfa2d07cd562" name="Default" comment="Reorganise Package deepLearning">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/Source/prepredict_Number_response_merged_withHeader.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/Source/response_merged.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/Source/response_merged_withHeader.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/extendFile/extendLabelResults.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/extendFile/extendNumberEndFile.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Util/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Util/compareTwoCSV.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Util/readResponseCSV.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deepLearning/kerasPredict.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deepLearning/keras_Sum.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extendReadCSV.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/temp/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/temp/temp0905.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/DataframeAssignment.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/Keras0812.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/PandasSeries.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/ProcessCSV.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/ReadCSV0727.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Backup/ReadCSVRegularExpression.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/TempSamples2/MyFile/EndFile.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/TempSamples2/MyFile/Temp/RegularExpressionEndFile.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/TempSamples2/MyFile/Temp/T1_samples1.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/TempSamples2/MyFile/TempEndFile.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/TempSamples2/MyFile/TempEndFile0726.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/TempSamples2/MyFile/TempNumberEndFile.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/TempSamples2/MyFile/TempPredictionEndFile.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/TempSamples2/MyFile/TestT1_samples1.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Temorary/intersection.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Temorary/temp0726.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Temorary/temp0804.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Temorary/temp0901.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/Keras Note" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/Temp/Temp/Temp0727.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/Temp/Temp/Temp0810.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/Temp/Temp/TempReadCSV.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/Temp/Temp/TempReadCSV0725.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/Temp/Temp0810.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/Temp0725.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/TempReadCSV.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/temp0725.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/archive/kerasLearn_AutomaticVerification.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/.T4_samples1.csv.swp" afterPath="$PROJECT_DIR$/tempData/TempSamples2/.T4_samples1.csv.swp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/MyFile/FullPreFile.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/MyFile/FullPreFile.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/MyFile/ManualFile.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/MyFile/ManualFile.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/MyFile/NoHeaderNumberEndFile.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/MyFile/NoHeaderNumberEndFile.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/MyFile/NumberEndFile.csv" afterPath="$PROJECT_DIR$/Data/processFile/NumberEndFile.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/MyFile/PreFile.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/MyFile/PreFile.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/MyFile/Sum.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/MyFile/Sum.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/MyFile/lable results.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/MyFile/lable results.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/T1_samples1.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/T1_samples1.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/T1_samples2.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/T1_samples2.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/T1_samples3.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/T1_samples3.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/T1_samples4.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/T1_samples4.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/T1_samples5.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/T1_samples5.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/T2_samples1.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/T2_samples1.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/T2_samples2.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/T2_samples2.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/T2_samples3.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/T2_samples3.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/T2_samples4.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/T2_samples4.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/T2_samples5.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/T2_samples5.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/T4_samples1.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/T4_samples1.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/T4_samples2.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/T4_samples2.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/T4_samples3.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/T4_samples3.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/T4_samples4.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/T4_samples4.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/T4_samples5.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/T4_samples5.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/T4_samples6.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/T4_samples6.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/T4_samples7.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/T4_samples7.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/T8_samples1.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/T8_samples1.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/T8_samples2.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/T8_samples2.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/T8_samples3.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/T8_samples3.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/T8_samples4.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/T8_samples4.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/T8_samples5.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/T8_samples5.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/T8_samples6.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/T8_samples6.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/T8_samples7.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/T8_samples7.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/T8_samples8.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/T8_samples8.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/T9_samples1.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/T9_samples1.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/T9_samples2.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/T9_samples2.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/T9_samples3.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/T9_samples3.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/TempSamples2/T9_samples4.csv" afterPath="$PROJECT_DIR$/tempData/TempSamples2/T9_samples4.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Temorary/__init__.py" afterPath="$PROJECT_DIR$/Data/Source/readme.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Temp/Temp0803.ipynb" afterPath="$PROJECT_DIR$/temp/temp0905.ipynb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/archive/__init__.py" afterPath="$PROJECT_DIR$/Data/extendFile/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/SecurityOperationsCenterRetrieval.iml" afterPath="$PROJECT_DIR$/.idea/SecurityOperationsCenterRetrieval.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="47fa0e53-6f47-4640-a9de-cfa2d07cd562" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BigML.py" afterPath="$PROJECT_DIR$/BigML.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classification.py" afterPath="$PROJECT_DIR$/Classification.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReadCSV.py" afterPath="$PROJECT_DIR$/ReadCSV.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SumClassification.py" afterPath="$PROJECT_DIR$/SumClassification.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SumSVMClassification.py" afterPath="$PROJECT_DIR$/SumSVMClassification.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deepLearning/F1Keras.py" afterPath="$PROJECT_DIR$/deepLearning/F1Keras.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deepLearning/KerasLearn.py" afterPath="$PROJECT_DIR$/deepLearning/KerasLearn.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deepLearning/keras_CrossValidation.py" afterPath="$PROJECT_DIR$/deepLearning/keras_CrossValidation.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/featureAnalysis/principalComponentAnalysis.py" afterPath="$PROJECT_DIR$/featureAnalysis/principalComponentAnalysis.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/featureAnalysis/recursiveFeatureElimination.py" afterPath="$PROJECT_DIR$/featureAnalysis/recursiveFeatureElimination.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/featureAnalysis/recursiveFeatureElimination2.py" afterPath="$PROJECT_DIR$/featureAnalysis/recursiveFeatureElimination2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/featureAnalysis/selectFromModel.py" afterPath="$PROJECT_DIR$/featureAnalysis/selectFromModel.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/featureAnalysis/univariateSelection.py" afterPath="$PROJECT_DIR$/featureAnalysis/univariateSelection.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/featureAnalysis/univariateSelection0901.py" afterPath="$PROJECT_DIR$/featureAnalysis/univariateSelection0901.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model_logging.py" afterPath="$PROJECT_DIR$/model_logging.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflowLearnVisualization.py" afterPath="$PROJECT_DIR$/tensorflowLearnVisualization.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/visualize_training.py" afterPath="$PROJECT_DIR$/visualize_training.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deepLearning/keras_Sum.py" afterPath="$PROJECT_DIR$/deepLearning/keras_Sum.py" />
     </list>
     <ignored path="C:\Users\txl78\PycharmProjects\SecurityOperationsCenterRetrieval\.idea\shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -185,26 +87,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ReadCSV.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ReadCSV.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="prepredict_response_merged_withHeader.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data/Source/prepredict_response_merged_withHeader.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="keras_CrossValidation.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deepLearning/keras_CrossValidation.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -215,14 +97,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="keras_Sum.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="keras_Sum.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deepLearning/keras_Sum.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="34" column="12" lean-forward="false" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+            <state relative-caret-position="351">
+              <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
               <folding>
-                <element signature="e#56#65#0" expanded="true" />
+                <element signature="e#56#75#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="69" lean-forward="false" selection-start-line="0" selection-start-column="69" selection-end-line="0" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="response_merged_withHeader.csv" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Data/Source/response_merged_withHeader.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data/extendFile/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SECOND">
+              <first_editor relative-caret-position="324">
+                <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -240,7 +155,7 @@
       <file leaf-file-name="SumSVMClassification.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SumSVMClassification.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
+            <state relative-caret-position="270">
               <caret line="13" column="9" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -262,18 +177,8 @@
       <file leaf-file-name="selectFromModel.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/featureAnalysis/selectFromModel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
+            <state relative-caret-position="810">
               <caret line="34" column="11" lean-forward="false" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="principalComponentAnalysis.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/featureAnalysis/principalComponentAnalysis.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -282,7 +187,7 @@
       <file leaf-file-name="BigML.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BigML.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="270">
               <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
               <folding />
             </state>
@@ -294,9 +199,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Markdown" />
         <option value="Jupyter Notebook" />
         <option value="Python Script" />
+        <option value="Markdown" />
       </list>
     </option>
   </component>
@@ -320,7 +225,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Temp0809.py" />
         <option value="$PROJECT_DIR$/Temp/Temp0803.ipynb" />
         <option value="$PROJECT_DIR$/model_logging.py" />
         <option value="$PROJECT_DIR$/Temp0810.ipynb" />
@@ -368,9 +272,10 @@
         <option value="$PROJECT_DIR$/deepLearning/kerasPredict.py" />
         <option value="$PROJECT_DIR$/temp/temp0905.py" />
         <option value="$PROJECT_DIR$/BigML.py" />
-        <option value="$PROJECT_DIR$/deepLearning/keras_Sum.py" />
         <option value="$PROJECT_DIR$/SumClassification.py" />
         <option value="$PROJECT_DIR$/SumSVMClassification.py" />
+        <option value="$PROJECT_DIR$/deepLearning/keras_Sum.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -404,6 +309,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="SecurityOperationsCenterRetrieval" type="cbb8eebc:String" user="SecurityOperationsCenterRetrieval" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -436,72 +352,12 @@
             </path>
             <path>
               <item name="SOCRetrieval" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecurityOperationsCenterRetrieval" type="462c0819:PsiDirectoryNode" />
-              <item name="deepLearning" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOCRetrieval" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecurityOperationsCenterRetrieval" type="462c0819:PsiDirectoryNode" />
-              <item name="featureAnalysis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOCRetrieval" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecurityOperationsCenterRetrieval" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOCRetrieval" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecurityOperationsCenterRetrieval" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-              <item name="histogram_visualization" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOCRetrieval" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecurityOperationsCenterRetrieval" type="462c0819:PsiDirectoryNode" />
-              <item name="temp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOCRetrieval" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecurityOperationsCenterRetrieval" type="462c0819:PsiDirectoryNode" />
-              <item name="tempData" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOCRetrieval" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecurityOperationsCenterRetrieval" type="462c0819:PsiDirectoryNode" />
-              <item name="tempData" type="462c0819:PsiDirectoryNode" />
-              <item name="TempSamples2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOCRetrieval" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecurityOperationsCenterRetrieval" type="462c0819:PsiDirectoryNode" />
-              <item name="tempData" type="462c0819:PsiDirectoryNode" />
-              <item name="TempSamples2" type="462c0819:PsiDirectoryNode" />
-              <item name="MyFile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOCRetrieval" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecurityOperationsCenterRetrieval" type="462c0819:PsiDirectoryNode" />
-              <item name="Util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOCRetrieval" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
               <item name="SOCRetrieval" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="&lt; Python 3.5.4 (C:\Users\txl78\AppData\Local\Continuum\Anaconda3\envs\lttensorflow\python.exe) &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="SecurityOperationsCenterRetrieval" type="cbb8eebc:String" user="SecurityOperationsCenterRetrieval" />
             </path>
           </expand>
           <select />
@@ -526,7 +382,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/temporary" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Ex_Files_Python_Tkinter(1)/Ex_Files_Python_Tkinter" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="SearchEverywhereHistoryKey" value="markdown&#9;ACTION&#9;Markdown.Toolbar.Left&#10;todo&#9;ACTION&#9;ActivateTODOToolWindow" />
@@ -1027,7 +883,14 @@
       <option name="project" value="LOCAL" />
       <updated>1504363775256</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Reorganise Package deepLearning">
+      <created>1504899278343</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1504899278343</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1041,29 +904,28 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.49791667" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5638945" sideWeight="0.49583334" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296146" sideWeight="0.50208336" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2454361" sideWeight="0.5703125" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3271028" sideWeight="0.45149255" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.4978678" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5472482" sideWeight="0.4914712" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14739583" sideWeight="0.494705" order="0" side_tool="false" content_ui="combo" x="716" y="235" width="487" height="610" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14739583" sideWeight="0.494705" order="0" side_tool="false" content_ui="combo" x="716" y="235" width="487" height="610" />
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47160244" sideWeight="0.80810237" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296146" sideWeight="0.49791667" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16718587" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36612576" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22083333" sideWeight="0.505295" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5638945" sideWeight="0.49583334" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296146" sideWeight="0.49791667" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16718587" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1133,13 +995,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/featureAnalysis/recursiveFeatureElimination2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/featureAnalysis/univariateSelection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -1242,21 +1097,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/extendFile/readme.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="324">
-            <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data/extendFile/extendEndFile.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1300,13 +1140,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/Source/response_merged_withHeader.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data/Source/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -1328,7 +1161,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1336,7 +1168,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1344,7 +1175,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1352,7 +1182,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="40" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1360,7 +1189,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1382,7 +1210,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ReadCSV.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
+        <state relative-caret-position="135">
           <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
@@ -1406,7 +1234,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SumSVMClassification.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
+        <state relative-caret-position="270">
           <caret line="13" column="9" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
@@ -1424,7 +1252,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/featureAnalysis/selectFromModel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
+        <state relative-caret-position="810">
           <caret line="34" column="11" lean-forward="false" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
           <folding />
         </state>
@@ -1432,7 +1260,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BigML.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="270">
           <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
           <folding />
         </state>
@@ -1440,11 +1268,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/deepLearning/keras_Sum.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="34" column="12" lean-forward="false" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+        <state relative-caret-position="351">
+          <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
           <folding>
-            <element signature="e#56#65#0" expanded="true" />
+            <element signature="e#56#75#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/extendFile/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="324">
+            <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="69" lean-forward="false" selection-start-line="0" selection-start-column="69" selection-end-line="0" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Source/response_merged_withHeader.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

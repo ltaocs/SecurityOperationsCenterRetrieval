@@ -1,6 +1,6 @@
 # Accuracy 73.69% (+/- 7.51%)
 # This module use sum.csv
-import os
+from os import path
 
 import numpy
 import pandas as pd
@@ -11,8 +11,8 @@ from sklearn.model_selection import StratifiedKFold
 # fix random seed for reproducibility
 seed = 2
 numpy.random.seed(seed)
-my_path = os.path.abspath(os.path.dirname(__file__))
-FileSum = os.path.join(my_path, '../tempData/TempSamples2/MyFile/Sum.csv')
+my_path = path.abspath(path.dirname(__file__))
+FileSum = path.join(my_path, '../tempData/TempSamples2/MyFile/Sum.csv')
 Data_Source = pd.read_csv(FileSum)
 feature_cols = ['DSTPORTSum', 'SRCPORTSum', 'SRCIPSum', 'DSTIPSum']
 X = Data_Source[feature_cols].values
