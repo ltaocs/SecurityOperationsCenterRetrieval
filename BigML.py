@@ -1,5 +1,5 @@
 # api = bigml.BigML()
-# sapi = bigml.BigML('lintao', '1d424ec03053afba4b8c368bd34ddf189846b06c')
+# sapi = bigml.BigML('lintao', '')
 from bigml.api import BigML
 
 # This is not real api key
